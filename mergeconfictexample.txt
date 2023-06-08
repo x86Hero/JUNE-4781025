@@ -6,10 +6,5 @@ yyyyyyyyyy
 9037168190
 3735927870
 3066018792
-<<<<<<< HEAD
 bbbbbbbbbb
-7462088365
-=======
-9700165304
 aaaaaaaaaa
->>>>>>> mergetest2
