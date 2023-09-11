@@ -1,9 +1,9 @@
 # 3 casting variables - calculate area and perimeter of the rectangle
 
 # get user input and cast to int, store in length variable
-length = int(input("Please enter the length of the rectangle: "))
+length=int(input("Please enter the length of the rectangle: "))
 # get user input and cast to int, store in width variable
-width = int(input("Please enter the height of the rectangle: "))
+width=int(input("Please enter the height of the rectangle: "))
 
 # print the area calculation using length and width (l*w)
 print("The area of this rectangle is", length * width)
