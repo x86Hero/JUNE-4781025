@@ -3,9 +3,8 @@
 userNum=int(input("Please enter a number: ")) # (2)
 factorialResult = userNum
 
-while userNum > 0: # (3)
-    if userNum > 1:
-        factorialResult = (userNum - 1) * factorialResult
+while userNum >= 2: # (3)
     userNum -= 1
+    factorialResult = userNum * factorialResult
 
 print(factorialResult) # (3)
