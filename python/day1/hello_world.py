@@ -70,3 +70,7 @@ print(bool(textVar1))
 # anything that is 0, it will return False
 # any string that is not empty "", boolean will return True
 # any string that is empty "", boolean will return False
+
+
+# you can find the type of a variables by using type()
+type(textVar1)
