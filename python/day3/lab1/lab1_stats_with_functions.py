@@ -13,3 +13,8 @@ print(min(grades))
 
 #(6)
 print(max(grades))
+
+#(7)
+# values are 100 and 99.
+# this is because the list items are string 
+print(type(grades[0]))
