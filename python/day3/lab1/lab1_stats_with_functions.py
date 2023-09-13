@@ -10,3 +10,6 @@ print(grades)
 
 #(5)
 print(min(grades))
+
+#(6)
+print(max(grades))
