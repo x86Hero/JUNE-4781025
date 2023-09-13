@@ -14,9 +14,9 @@ showTwo() # calling a function later on
 
 
 # calculator example
-def addTwo(userNum):
-    if userNum.isnumeric() :
-        print(int(userNum) + 2)
+def addTwo(arg):
+    if arg.isnumeric() :
+        print(int(arg) + 2)
     else:
         print("You didnt provide a number...")
 
@@ -25,8 +25,8 @@ userNum = input("Give me a number: ")
 addTwo(userNum)
 
 # function with a return - doubling input into a list.
-def doubler(userNum):
-    return [userNum,userNum]
+def doubler(arg):
+    return [arg,arg]
 
 userNum = input("Give me a number: ")
 doubledInput = doubler(userNum)
