@@ -14,7 +14,10 @@ print(min(grades))
 #(6)
 print(max(grades))
 
-#(7)
+#(7,8)
 # values are 100 and 99.
 # this is because the list items are string 
 print(type(grades[0]))
+
+#(9) using list to cast 'grades' back into itself, but using map to convert the items to int
+grades = list(map(int, grades))
