@@ -36,3 +36,6 @@ print(avgGrade)
 
 #(13)
 print(round(statistics.mean(grades),2))
+
+#(14)
+print(statistics.median(grades))
