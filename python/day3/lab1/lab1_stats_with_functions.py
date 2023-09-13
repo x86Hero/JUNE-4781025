@@ -1,3 +1,5 @@
+import statistics #(12)
+
 # stats with functions
 
 #(1,2,3)
