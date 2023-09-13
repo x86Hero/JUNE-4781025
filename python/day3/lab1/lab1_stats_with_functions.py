@@ -21,3 +21,7 @@ print(type(grades[0]))
 
 #(9) using list to cast 'grades' back into itself, but using map to convert the items to int
 grades = list(map(int, grades))
+
+#(10)
+print(min(grades))
+print(max(grades))
