@@ -33,3 +33,6 @@ gradesLen=len(grades)
 gradesTotal=sum(grades)
 avgGrade=round(gradesTotal/gradesLen,2)
 print(avgGrade)
+
+#(13)
+print(round(statistics.mean(grades),2))
