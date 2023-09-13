@@ -31,3 +31,9 @@ def doubler(arg):
 userNum = input("Give me a number: ")
 doubledInput = doubler(userNum)
 print(doubledInput)
+
+# importing your own functions
+
+#import <file_name>
+#import <folder_name>.<file_name>
+
