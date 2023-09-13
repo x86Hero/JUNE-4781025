@@ -39,3 +39,7 @@ print(round(statistics.mean(grades),2))
 
 #(14)
 print(statistics.median(grades))
+
+#(15)
+gradeStatsString = "The min grade scored is {}. The max grade scored is {}. The avg score is {}. The mean is {}. The median is {}"
+print(gradeStatsString.format(min(grades),max(grades),avgGrade,round(statistics.mean(grades),2),statistics.median(grades)))
