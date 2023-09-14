@@ -31,8 +31,11 @@ selectAllSale = "SELECT * FROM sale"
 for row in cur.execute(selectAllSale).fetchall():
     print(row)
 
-
-
+# aggregate functions
+# select employees and add up all the order total (as sale_total), by grouping all the emp_no records.
+aggregateQuery = "SELECT emp_no, sum(order_value) as sale_total FROM sale GROUP BY emp_no"
+for row in cur.execute(aggregateQuery).fetchall():
+    print(row)
 
 #close connection
 conn.close()
