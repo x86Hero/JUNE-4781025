@@ -8,9 +8,30 @@ conn = pyodbc.connect(connectionString)
 cur = conn.cursor()
 
 
+
+
 # queries
-for row in cur.tables(catalog="QAStore",schema="dbo"):
-    print(row.table_name)
+
+# basic example: SELECT <COLUMN NAME> FROM <TABLE NAME>
+
+# get table names
+for table in cur.tables(schema="dbo"):
+    print(table.table_name)
+
+# get all rows from company
+for row in cur.execute('SELECT * FROM company').fetchall():
+    print(row)
+
+# get all column names from table
+for column in cur.columns(table="company").fetchall():
+    print(column)
+
+# storing query in variable
+selectAllSale = "SELECT * FROM sale"
+for row in cur.execute(selectAllSale).fetchall():
+    print(row)
+
+
 
 
 #close connection
