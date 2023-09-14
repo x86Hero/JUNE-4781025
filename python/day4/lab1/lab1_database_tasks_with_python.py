@@ -29,7 +29,6 @@ def createTable(statement):
     conn.close()
     return result
 
-
 def getTableColumns(tableName):
     conn = sqlConn()
     cur = sqlCur(conn)
