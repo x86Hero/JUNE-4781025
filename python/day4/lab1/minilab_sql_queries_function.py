@@ -31,7 +31,7 @@ inQuery="DECLARE @minLivingWage AS DECIMAL = 13.000 ; SELECT emp_no, first_name,
 # get department name , manager and all employees from department '3'
 equalQuery="SELECT dept.dept_no, dept.dept_name, dept.manager, salesperson.first_name, salesperson.last_name FROM dept INNER JOIN salesperson ON dept.dept_no = salesperson.dept_no WHERE dept.dept_no = 3"
 
-print("Employees sales in Q2 2000: \n" + runQuery(betweenQuery) + "\n")
+print("Employees and their sales in Q2 2000: \n" + runQuery(betweenQuery) + "\n")
 print("Officer contacts for marketing: \n" + runQuery(likeQuery) + "\n")
 print("Units selling at or under 10 pounds: \n" + runQuery(lessthanQuery) + "\n")
 print("Employees under or at min living wage: \n" + runQuery(inQuery) + "\n")
