@@ -40,10 +40,17 @@ def writeQuery(statement):
     conn.close()
     return result
 
+
+
 # ------------------- main --------------------
 
 # INSERT INTO TABLE_NAME (COL1,COL2,COL3)
 # VALUES (VAL1,VAL2,VAL3)
+
+# UPDATE salesperson SET post_code = 'E10 5HP'
+# WHERE emp_no = 70
+
+# DELETE FROM salesperson WHERE emp_no = 70
 
 # Get records from salesperson
 getSalesTeam= "SELECT * FROM salesperson"
@@ -53,7 +60,17 @@ writeStmnt = """INSERT INTO salesperson (emp_no, first_name, last_name, dept_no,
 VALUES ('70','Ash','Lee','2','13.000','9.000','London','E105HG','07382947591','Ash is awesome!')
 """
 
+# update value(s) on an existing record, based on a filter
+updateStmnt = """UPDATE salesperson SET post_code = 'E10 5HP'
+WHERE emp_no = 70
+"""
+
+# delete a record based on a filter
+deleteStmnt = "DELETE FROM salesperson WHERE emp_no = 70"
+
 # get the table rows before insert, insert the data and then check the rows again after.
 #print(runQuery(getSalesTeam))
-print(writeQuery(writeStmnt))
-#print(runQuery(getSalesTeam))
+#print(writeQuery(writeStmnt))
+#print(writeQuery(updateStmnt))
+print(writeQuery(deleteStmnt))
+print(runQuery(getSalesTeam))
