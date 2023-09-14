@@ -1,7 +1,7 @@
 #import modules
 import pyodbc
 
-def execQuery(sqlQuery):
+def getQueryData(sqlQuery):
     #create sql server connection string
     connectionString = r'DRIVER={ODBC Driver 13 for SQL Server};SERVER=.\SQLExpress;DATABASE=qastore;Trusted_Connection=yes'
     #create connection object with the string
@@ -14,7 +14,7 @@ def execQuery(sqlQuery):
     return result
 
 def runQuery(qString):
-    data = execQuery(qString)
+    data = getQueryData(qString)
     rowList = (list(map(str,data)))
     rows='\n'.join(rowList[0:])
     return rows
