@@ -40,3 +40,5 @@ print(type(bonnie))
 print(bonnie.energy)
 bonnie.energy = "Low"
 print(bonnie.energy)
+
+# double '__' are internal methods, not to be called by the end user/instance(s)
